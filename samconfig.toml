@@ -1,0 +1,22 @@
+version = 0.1
+
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "amazon-connect-ops-review"
+resolve_s3 = true
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = [
+    # Uncomment and set these values, or use --guided flag to be prompted
+    # "AmazonConnectInstanceARN=arn:aws:connect:REGION:ACCOUNT:instance/INSTANCE-ID",
+    # "AmazonConnectCloudWatchLogGroup=/aws/connect/INSTANCE-ALIAS",
+    # "CreateS3Bucket=Yes",
+    # "AmazonS3ForReports=my-unique-bucket-name"
+]
+
+[default.build]
+[default.build.parameters]
+cached = true
+parallel = true

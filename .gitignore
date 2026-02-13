@@ -1,0 +1,70 @@
+# SAM build artifacts
+.aws-sam/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+response.json
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated reports (HTML)
+*.html
+!functions/**/*.html
+
+# Environment
+.env
+.env.local
+.venv
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+.kiro/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# AWS
+*.pem
+*.key
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
